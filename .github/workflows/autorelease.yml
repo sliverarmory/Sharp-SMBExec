@@ -32,7 +32,7 @@ jobs:
     - name: MSBuild
       run: |
         msbuild.exe SharpInvoke-SMBExec.sln /p:Configuration=Release /p:Platform="Any CPU" /p:OutputPath=compiled/
-        Copy-Item -Path Sharp-SMBExec\compiled\Sharp-SMBExec.exe -Destination compiled\Sharp-SMBExec.exe
+        Copy-Item -Path SharpInvoke-SMBExec\compiled\Sharp-SMBExec.exe -Destination compiled\Sharp-SMBExec.exe
 
     - name: Build Package
       # Powershell is utter fucking trash.
